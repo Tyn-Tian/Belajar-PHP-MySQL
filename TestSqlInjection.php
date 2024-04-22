@@ -8,6 +8,11 @@ $username = "admin'; #";
 $password = "salah gak peduli";
 $sql = "SELECT * FROM admin WHERE username = '$username' AND password = '$password'";
 
+// Bisa menggunakan quote untuk mencegah sql injection tetapi tidak direkomendasikan
+// $username = $connection->quote("admin'; #");
+// $password = $connection->quote("salah gak peduli");
+// $sql = "SELECT * FROM admin WHERE username = $username AND password = $password";
+
 echo $sql . PHP_EOL;
 
 $result = $connection->query($sql);
