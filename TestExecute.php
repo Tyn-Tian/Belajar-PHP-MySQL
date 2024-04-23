@@ -5,8 +5,8 @@ require_once "./GetConnection.php";
 $connection = getConnection();
 
 $sql = <<<SQL
-    insert into customers(id, name, email)
-    values ("Tyn", "Christian", "test@gmail.com") 
+    INSERT INTO customers(id, name, email)
+    VALUES ("Tyn", "Christian", "test@gmail.com") 
 SQL;
 
 $connection->exec($sql);

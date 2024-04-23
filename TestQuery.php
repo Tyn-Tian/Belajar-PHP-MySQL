@@ -4,7 +4,7 @@ require_once "./GetConnection.php";
 
 $connection = getConnection();
 
-$sql = "Select id, name, email from customers";
+$sql = "SELECT id, name, email FROM customers";
 $result = $connection->query($sql);
 
 foreach ($result as $row) {
